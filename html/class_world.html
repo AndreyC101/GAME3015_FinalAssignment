@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Assignment 2: World Class Reference</title>
+<title>Game Engine Development 2 FINAL: World Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Assignment 2
+   <div id="projectname">Game Engine Development 2 FINAL
    </div>
-   <div id="projectbrief">shoot em up using directx</div>
   </td>
  </tr>
  </tbody>
@@ -76,191 +75,34 @@ $(function() {
   <div class="headertitle"><div class="title">World Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_world_8hpp_source.html">World.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a712eb4a5b0d12588dd61d10c91b83366"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a712eb4a5b0d12588dd61d10c91b83366">World</a> (<a class="el" href="class_game.html">Game</a> *window)</td></tr>
+<tr class="memitem:a712eb4a5b0d12588dd61d10c91b83366"><td class="memItemLeft" align="right" valign="top"><a id="a712eb4a5b0d12588dd61d10c91b83366" name="a712eb4a5b0d12588dd61d10c91b83366"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>World</b> (<a class="el" href="class_game.html">Game</a> *window)</td></tr>
 <tr class="separator:a712eb4a5b0d12588dd61d10c91b83366"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36c003f54e14e022a360551af5e7923e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a36c003f54e14e022a360551af5e7923e">update</a> (const GameTimer &amp;gt)</td></tr>
+<tr class="memitem:a36c003f54e14e022a360551af5e7923e"><td class="memItemLeft" align="right" valign="top"><a id="a36c003f54e14e022a360551af5e7923e" name="a36c003f54e14e022a360551af5e7923e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (const GameTimer &amp;gt)</td></tr>
 <tr class="separator:a36c003f54e14e022a360551af5e7923e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74921b36c131d28e965b59177a29b375"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a74921b36c131d28e965b59177a29b375">draw</a> (ID3D12GraphicsCommandList *cmdList)</td></tr>
-<tr class="separator:a74921b36c131d28e965b59177a29b375"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7df49f5d488e5cd1254bf360966f410"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#ae7df49f5d488e5cd1254bf360966f410">buildScene</a> ()</td></tr>
-<tr class="separator:ae7df49f5d488e5cd1254bf360966f410"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a557b5dbc07cd37ee123af85e26821da0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a557b5dbc07cd37ee123af85e26821da0">MovePlayer2D</a> (float x, float y)</td></tr>
-<tr class="separator:a557b5dbc07cd37ee123af85e26821da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ba575812f1dbd677c5a6139b55451e6"><td class="memItemLeft" align="right" valign="top">XMVECTOR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a1ba575812f1dbd677c5a6139b55451e6">getPlayerPosition</a> ()</td></tr>
+<tr class="memitem:ad8e29898b41a8f82b92b8ec4123a7414"><td class="memItemLeft" align="right" valign="top"><a id="ad8e29898b41a8f82b92b8ec4123a7414" name="ad8e29898b41a8f82b92b8ec4123a7414"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> (<a class="el" href="class_game.html">Game</a> *game)</td></tr>
+<tr class="separator:ad8e29898b41a8f82b92b8ec4123a7414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe018b939acaec359ecb496ad76beb53"><td class="memItemLeft" align="right" valign="top"><a id="afe018b939acaec359ecb496ad76beb53" name="afe018b939acaec359ecb496ad76beb53"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>buildScene</b> (States::ID stateID)</td></tr>
+<tr class="separator:afe018b939acaec359ecb496ad76beb53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ba575812f1dbd677c5a6139b55451e6"><td class="memItemLeft" align="right" valign="top"><a id="a1ba575812f1dbd677c5a6139b55451e6" name="a1ba575812f1dbd677c5a6139b55451e6"></a>
+XMVECTOR&#160;</td><td class="memItemRight" valign="bottom"><b>getPlayerPosition</b> ()</td></tr>
 <tr class="separator:a1ba575812f1dbd677c5a6139b55451e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5c4e77124ce8f6f51336303dfa4e5d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_input_command_queue.html">InputCommandQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#af5c4e77124ce8f6f51336303dfa4e5d9">getCommandQueue</a> ()</td></tr>
+<tr class="memitem:af5c4e77124ce8f6f51336303dfa4e5d9"><td class="memItemLeft" align="right" valign="top"><a id="af5c4e77124ce8f6f51336303dfa4e5d9" name="af5c4e77124ce8f6f51336303dfa4e5d9"></a>
+<a class="el" href="class_input_command_queue.html">InputCommandQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getCommandQueue</b> ()</td></tr>
 <tr class="separator:af5c4e77124ce8f6f51336303dfa4e5d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5d9b6b0e18307c0e50d60f1426a147f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#ac5d9b6b0e18307c0e50d60f1426a147f">adaptPlayerVelocity</a> ()</td></tr>
+<tr class="memitem:ac5d9b6b0e18307c0e50d60f1426a147f"><td class="memItemLeft" align="right" valign="top"><a id="ac5d9b6b0e18307c0e50d60f1426a147f" name="ac5d9b6b0e18307c0e50d60f1426a147f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>adaptPlayerVelocity</b> ()</td></tr>
 <tr class="separator:ac5d9b6b0e18307c0e50d60f1426a147f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a712eb4a5b0d12588dd61d10c91b83366" name="a712eb4a5b0d12588dd61d10c91b83366"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a712eb4a5b0d12588dd61d10c91b83366">&#9670;&#160;</a></span>World()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">World::World </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_game.html">Game</a> *&#160;</td>
-          <td class="paramname"><em>window</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac5d9b6b0e18307c0e50d60f1426a147f" name="ac5d9b6b0e18307c0e50d60f1426a147f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5d9b6b0e18307c0e50d60f1426a147f">&#9670;&#160;</a></span>adaptPlayerVelocity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void World::adaptPlayerVelocity </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae7df49f5d488e5cd1254bf360966f410" name="ae7df49f5d488e5cd1254bf360966f410"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7df49f5d488e5cd1254bf360966f410">&#9670;&#160;</a></span>buildScene()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void World::buildScene </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a74921b36c131d28e965b59177a29b375" name="a74921b36c131d28e965b59177a29b375"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74921b36c131d28e965b59177a29b375">&#9670;&#160;</a></span>draw()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void World::draw </td>
-          <td>(</td>
-          <td class="paramtype">ID3D12GraphicsCommandList *&#160;</td>
-          <td class="paramname"><em>cmdList</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af5c4e77124ce8f6f51336303dfa4e5d9" name="af5c4e77124ce8f6f51336303dfa4e5d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5c4e77124ce8f6f51336303dfa4e5d9">&#9670;&#160;</a></span>getCommandQueue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_input_command_queue.html">InputCommandQueue</a> * World::getCommandQueue </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1ba575812f1dbd677c5a6139b55451e6" name="a1ba575812f1dbd677c5a6139b55451e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ba575812f1dbd677c5a6139b55451e6">&#9670;&#160;</a></span>getPlayerPosition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">XMVECTOR World::getPlayerPosition </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a557b5dbc07cd37ee123af85e26821da0" name="a557b5dbc07cd37ee123af85e26821da0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a557b5dbc07cd37ee123af85e26821da0">&#9670;&#160;</a></span>MovePlayer2D()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void World::MovePlayer2D </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a36c003f54e14e022a360551af5e7923e" name="a36c003f54e14e022a360551af5e7923e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36c003f54e14e022a360551af5e7923e">&#9670;&#160;</a></span>update()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void World::update </td>
-          <td>(</td>
-          <td class="paramtype">const GameTimer &amp;&#160;</td>
-          <td class="paramname"><em>gt</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="_world_8hpp_source.html">World.hpp</a></li>
-<li><a class="el" href="_world_8cpp.html">World.cpp</a></li>
+<li>Assignment1_ChizhovAndrey/<a class="el" href="_world_8hpp_source.html">World.hpp</a></li>
+<li>Assignment1_ChizhovAndrey/World.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

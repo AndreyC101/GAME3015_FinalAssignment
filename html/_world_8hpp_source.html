@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Assignment 2: World.hpp Source File</title>
+<title>Game Engine Development 2 FINAL: Assignment1_ChizhovAndrey/World.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Assignment 2
+   <div id="projectname">Game Engine Development 2 FINAL
    </div>
-   <div id="projectbrief">shoot em up using directx</div>
   </td>
  </tr>
  </tbody>
@@ -47,7 +46,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -69,74 +67,58 @@ $(function() {
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_55e203a30ebf9a41bb2d31f923f1c32e.html">Assignment1_ChizhovAndrey</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">World.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_world_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_scene_node_8hpp.html">SceneNode.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_aircraft_8hpp.html">Aircraft.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_scrolling_background_8hpp.html">ScrollingBackground.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_sprite_node_8h.html">SpriteNode.h</a>&quot;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_command_queue_8hpp.html">CommandQueue.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_world.html">    8</a></span><span class="keyword">class </span><a class="code hl_class" href="class_world.html">World</a> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">explicit</span>                            <a class="code hl_class" href="class_world.html">World</a>(<a class="code hl_class" href="class_game.html">Game</a>* window);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordtype">void</span>                                <a class="code hl_function" href="class_world.html#a36c003f54e14e022a360551af5e7923e">update</a>(<span class="keyword">const</span> GameTimer&amp; gt);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordtype">void</span>                                <a class="code hl_function" href="class_world.html#a74921b36c131d28e965b59177a29b375">draw</a>(ID3D12GraphicsCommandList* cmdList);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="comment">//void                              loadTextures();</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">void</span>                                <a class="code hl_function" href="class_world.html#ae7df49f5d488e5cd1254bf360966f410">buildScene</a>();</div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;SceneNode.hpp&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;CommandQueue.hpp&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_world.html">    5</a></span><span class="keyword">class </span><a class="code hl_class" href="class_world.html">World</a> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">explicit</span>                            <a class="code hl_class" href="class_world.html">World</a>(<a class="code hl_class" href="class_game.html">Game</a>* window);</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordtype">void</span>                                update(<span class="keyword">const</span> GameTimer&amp; gt);</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordtype">void</span>                                draw(<a class="code hl_class" href="class_game.html">Game</a>* game);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordtype">void</span>                                buildScene(States::ID stateID);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    XMVECTOR                            getPlayerPosition();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <a class="code hl_class" href="class_input_command_queue.html">InputCommandQueue</a>*                  getCommandQueue();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">void</span>                                adaptPlayerVelocity();</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span>                                <a class="code hl_function" href="class_world.html#a557b5dbc07cd37ee123af85e26821da0">MovePlayer2D</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    XMVECTOR                            <a class="code hl_function" href="class_world.html#a1ba575812f1dbd677c5a6139b55451e6">getPlayerPosition</a>();</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_class" href="class_input_command_queue.html">InputCommandQueue</a>*                  <a class="code hl_function" href="class_world.html#af5c4e77124ce8f6f51336303dfa4e5d9">getCommandQueue</a>();</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">void</span>                                <a class="code hl_function" href="class_world.html#ac5d9b6b0e18307c0e50d60f1426a147f">adaptPlayerVelocity</a>();</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">enum</span> Layer</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        Background,</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        Air,</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        LayerCount</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    };</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">enum</span> Layer</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        Background,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        Air,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        LayerCount</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    };</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_class" href="class_game.html">Game</a>*                               mGame;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_class" href="class_scene_node.html">SceneNode</a>*                          mSceneGraph;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_class" href="class_game.html">Game</a>*                               mGame;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_class" href="class_scene_node.html">SceneNode</a>*                          mSceneGraph;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    std::array&lt;SceneNode*, LayerCount&gt;  mSceneLayers;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_class" href="class_input_command_queue.html">InputCommandQueue</a>                   mInputCommandQueue;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    XMFLOAT4                            mWorldBounds;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    XMFLOAT2                            mSpawnPosition;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">float</span>                               mScrollSpeed;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_class" href="class_aircraft.html">Aircraft</a>*                           mPlayerAircraft;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_class" href="class_scrolling_background.html">ScrollingBackground</a>*                mBackground;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_class" href="class_aircraft.html">Aircraft</a>*                           mEnemy;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
-<div class="ttc" id="a_aircraft_8hpp_html"><div class="ttname"><a href="_aircraft_8hpp.html">Aircraft.hpp</a></div></div>
-<div class="ttc" id="a_command_queue_8hpp_html"><div class="ttname"><a href="_command_queue_8hpp.html">CommandQueue.hpp</a></div></div>
-<div class="ttc" id="a_scene_node_8hpp_html"><div class="ttname"><a href="_scene_node_8hpp.html">SceneNode.hpp</a></div></div>
-<div class="ttc" id="a_scrolling_background_8hpp_html"><div class="ttname"><a href="_scrolling_background_8hpp.html">ScrollingBackground.hpp</a></div></div>
-<div class="ttc" id="a_sprite_node_8h_html"><div class="ttname"><a href="_sprite_node_8h.html">SpriteNode.h</a></div></div>
-<div class="ttc" id="aclass_aircraft_html"><div class="ttname"><a href="class_aircraft.html">Aircraft</a></div><div class="ttdef"><b>Definition:</b> Aircraft.hpp:7</div></div>
-<div class="ttc" id="aclass_game_html"><div class="ttname"><a href="class_game.html">Game</a></div><div class="ttdef"><b>Definition:</b> Game.hpp:5</div></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_class" href="class_input_command_queue.html">InputCommandQueue</a>                   mInputCommandQueue;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    XMFLOAT4                            mWorldBounds;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    XMFLOAT2                            mSpawnPosition;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">float</span>                               mScrollSpeed;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_class" href="class_scene_node.html">SceneNode</a>*                          mPlayerAircraft;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_class" href="class_scene_node.html">SceneNode</a>*                          mBackground;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
+<div class="ttc" id="aclass_game_html"><div class="ttname"><a href="class_game.html">Game</a></div><div class="ttdef"><b>Definition:</b> Game.hpp:10</div></div>
 <div class="ttc" id="aclass_input_command_queue_html"><div class="ttname"><a href="class_input_command_queue.html">InputCommandQueue</a></div><div class="ttdef"><b>Definition:</b> CommandQueue.hpp:6</div></div>
-<div class="ttc" id="aclass_scene_node_html"><div class="ttname"><a href="class_scene_node.html">SceneNode</a></div><div class="ttdef"><b>Definition:</b> SceneNode.hpp:55</div></div>
-<div class="ttc" id="aclass_scrolling_background_html"><div class="ttname"><a href="class_scrolling_background.html">ScrollingBackground</a></div><div class="ttdef"><b>Definition:</b> ScrollingBackground.hpp:7</div></div>
-<div class="ttc" id="aclass_world_html"><div class="ttname"><a href="class_world.html">World</a></div><div class="ttdef"><b>Definition:</b> World.hpp:9</div></div>
-<div class="ttc" id="aclass_world_html_a1ba575812f1dbd677c5a6139b55451e6"><div class="ttname"><a href="class_world.html#a1ba575812f1dbd677c5a6139b55451e6">World::getPlayerPosition</a></div><div class="ttdeci">XMVECTOR getPlayerPosition()</div><div class="ttdef"><b>Definition:</b> World.cpp:71</div></div>
-<div class="ttc" id="aclass_world_html_a36c003f54e14e022a360551af5e7923e"><div class="ttname"><a href="class_world.html#a36c003f54e14e022a360551af5e7923e">World::update</a></div><div class="ttdeci">void update(const GameTimer &amp;gt)</div><div class="ttdef"><b>Definition:</b> World.cpp:14</div></div>
-<div class="ttc" id="aclass_world_html_a557b5dbc07cd37ee123af85e26821da0"><div class="ttname"><a href="class_world.html#a557b5dbc07cd37ee123af85e26821da0">World::MovePlayer2D</a></div><div class="ttdeci">void MovePlayer2D(float x, float y)</div><div class="ttdef"><b>Definition:</b> World.cpp:65</div></div>
-<div class="ttc" id="aclass_world_html_a74921b36c131d28e965b59177a29b375"><div class="ttname"><a href="class_world.html#a74921b36c131d28e965b59177a29b375">World::draw</a></div><div class="ttdeci">void draw(ID3D12GraphicsCommandList *cmdList)</div><div class="ttdef"><b>Definition:</b> World.cpp:29</div></div>
-<div class="ttc" id="aclass_world_html_ac5d9b6b0e18307c0e50d60f1426a147f"><div class="ttname"><a href="class_world.html#ac5d9b6b0e18307c0e50d60f1426a147f">World::adaptPlayerVelocity</a></div><div class="ttdeci">void adaptPlayerVelocity()</div><div class="ttdef"><b>Definition:</b> World.cpp:81</div></div>
-<div class="ttc" id="aclass_world_html_ae7df49f5d488e5cd1254bf360966f410"><div class="ttname"><a href="class_world.html#ae7df49f5d488e5cd1254bf360966f410">World::buildScene</a></div><div class="ttdeci">void buildScene()</div><div class="ttdef"><b>Definition:</b> World.cpp:34</div></div>
-<div class="ttc" id="aclass_world_html_af5c4e77124ce8f6f51336303dfa4e5d9"><div class="ttname"><a href="class_world.html#af5c4e77124ce8f6f51336303dfa4e5d9">World::getCommandQueue</a></div><div class="ttdeci">InputCommandQueue * getCommandQueue()</div><div class="ttdef"><b>Definition:</b> World.cpp:76</div></div>
+<div class="ttc" id="aclass_scene_node_html"><div class="ttname"><a href="class_scene_node.html">SceneNode</a></div><div class="ttdef"><b>Definition:</b> SceneNode.hpp:46</div></div>
+<div class="ttc" id="aclass_world_html"><div class="ttname"><a href="class_world.html">World</a></div><div class="ttdef"><b>Definition:</b> World.hpp:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

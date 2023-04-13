@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Assignment 2: Player Class Reference</title>
+<title>Game Engine Development 2 FINAL: Player Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Assignment 2
+   <div id="projectname">Game Engine Development 2 FINAL
    </div>
-   <div id="projectbrief">shoot em up using directx</div>
   </td>
  </tr>
  </tbody>
@@ -77,175 +76,37 @@ $(function() {
   <div class="headertitle"><div class="title">Player Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_player_8h_source.html">Player.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a2da5df212d083bbb1460237f34ab0d88"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a2da5df212d083bbb1460237f34ab0d88">Action</a> { <a class="el" href="class_player.html#a2da5df212d083bbb1460237f34ab0d88a0166b28e57a9a8553a603a4c0fbe5807">MoveLeft</a>
-, <a class="el" href="class_player.html#a2da5df212d083bbb1460237f34ab0d88aa89dbd9060b77566a66b115531df631b">MoveRight</a>
-, <a class="el" href="class_player.html#a2da5df212d083bbb1460237f34ab0d88a6c74df21e9d4e850dd175a23b78c6540">MoveUp</a>
-, <a class="el" href="class_player.html#a2da5df212d083bbb1460237f34ab0d88a685fada3f0a5111b3b8e56f5357a05b0">MoveDown</a>
+<tr class="memitem:a2da5df212d083bbb1460237f34ab0d88"><td class="memItemLeft" align="right" valign="top"><a id="a2da5df212d083bbb1460237f34ab0d88" name="a2da5df212d083bbb1460237f34ab0d88"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Action</b> { <b>MoveLeft</b>
+, <b>MoveRight</b>
+, <b>MoveUp</b>
+, <b>MoveDown</b>
  }</td></tr>
 <tr class="separator:a2da5df212d083bbb1460237f34ab0d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:affe0cc3cb714f6deb4e62f0c0d3f1fd8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8">Player</a> ()</td></tr>
-<tr class="separator:affe0cc3cb714f6deb4e62f0c0d3f1fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4b310a8b04f3d2b18e2192e5df536fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#ae4b310a8b04f3d2b18e2192e5df536fd">initializeActions</a> ()</td></tr>
+<tr class="memitem:ae4b310a8b04f3d2b18e2192e5df536fd"><td class="memItemLeft" align="right" valign="top"><a id="ae4b310a8b04f3d2b18e2192e5df536fd" name="ae4b310a8b04f3d2b18e2192e5df536fd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initializeActions</b> ()</td></tr>
 <tr class="separator:ae4b310a8b04f3d2b18e2192e5df536fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a0a2008ad8a81caec0b473d231f483f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a1a0a2008ad8a81caec0b473d231f483f">handleEvent</a> (<a class="el" href="class_input_command_queue.html">InputCommandQueue</a> &amp;commands)</td></tr>
+<tr class="memitem:a1a0a2008ad8a81caec0b473d231f483f"><td class="memItemLeft" align="right" valign="top"><a id="a1a0a2008ad8a81caec0b473d231f483f" name="a1a0a2008ad8a81caec0b473d231f483f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handleEvent</b> (<a class="el" href="class_input_command_queue.html">InputCommandQueue</a> &amp;commands)</td></tr>
 <tr class="separator:a1a0a2008ad8a81caec0b473d231f483f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab9d82be79245fbfeaa899c73c7c1b76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#aab9d82be79245fbfeaa899c73c7c1b76">handleRealtimeInput</a> (<a class="el" href="class_input_command_queue.html">InputCommandQueue</a> &amp;commands)</td></tr>
+<tr class="memitem:aab9d82be79245fbfeaa899c73c7c1b76"><td class="memItemLeft" align="right" valign="top"><a id="aab9d82be79245fbfeaa899c73c7c1b76" name="aab9d82be79245fbfeaa899c73c7c1b76"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handleRealtimeInput</b> (<a class="el" href="class_input_command_queue.html">InputCommandQueue</a> &amp;commands)</td></tr>
 <tr class="separator:aab9d82be79245fbfeaa899c73c7c1b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8c0b2c6a04e0e074355e4c53818e0b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#af8c0b2c6a04e0e074355e4c53818e0b8">assignKey</a> (<a class="el" href="class_player.html#a2da5df212d083bbb1460237f34ab0d88">Action</a> action, int key)</td></tr>
+<tr class="memitem:af8c0b2c6a04e0e074355e4c53818e0b8"><td class="memItemLeft" align="right" valign="top"><a id="af8c0b2c6a04e0e074355e4c53818e0b8" name="af8c0b2c6a04e0e074355e4c53818e0b8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>assignKey</b> (Action action, int key)</td></tr>
 <tr class="separator:af8c0b2c6a04e0e074355e4c53818e0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6981eb691fdee98983e69a4daa6b05d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a6981eb691fdee98983e69a4daa6b05d0">getAssignedKey</a> (<a class="el" href="class_player.html#a2da5df212d083bbb1460237f34ab0d88">Action</a> action) const</td></tr>
+<tr class="memitem:a6981eb691fdee98983e69a4daa6b05d0"><td class="memItemLeft" align="right" valign="top"><a id="a6981eb691fdee98983e69a4daa6b05d0" name="a6981eb691fdee98983e69a4daa6b05d0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getAssignedKey</b> (Action action) const</td></tr>
 <tr class="separator:a6981eb691fdee98983e69a4daa6b05d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a2da5df212d083bbb1460237f34ab0d88" name="a2da5df212d083bbb1460237f34ab0d88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2da5df212d083bbb1460237f34ab0d88">&#9670;&#160;</a></span>Action</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="class_player.html#a2da5df212d083bbb1460237f34ab0d88">Player::Action</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2da5df212d083bbb1460237f34ab0d88a0166b28e57a9a8553a603a4c0fbe5807" name="a2da5df212d083bbb1460237f34ab0d88a0166b28e57a9a8553a603a4c0fbe5807"></a>MoveLeft&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a2da5df212d083bbb1460237f34ab0d88aa89dbd9060b77566a66b115531df631b" name="a2da5df212d083bbb1460237f34ab0d88aa89dbd9060b77566a66b115531df631b"></a>MoveRight&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a2da5df212d083bbb1460237f34ab0d88a6c74df21e9d4e850dd175a23b78c6540" name="a2da5df212d083bbb1460237f34ab0d88a6c74df21e9d4e850dd175a23b78c6540"></a>MoveUp&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a2da5df212d083bbb1460237f34ab0d88a685fada3f0a5111b3b8e56f5357a05b0" name="a2da5df212d083bbb1460237f34ab0d88a685fada3f0a5111b3b8e56f5357a05b0"></a>MoveDown&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="affe0cc3cb714f6deb4e62f0c0d3f1fd8" name="affe0cc3cb714f6deb4e62f0c0d3f1fd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affe0cc3cb714f6deb4e62f0c0d3f1fd8">&#9670;&#160;</a></span>Player()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Player::Player </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="af8c0b2c6a04e0e074355e4c53818e0b8" name="af8c0b2c6a04e0e074355e4c53818e0b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8c0b2c6a04e0e074355e4c53818e0b8">&#9670;&#160;</a></span>assignKey()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Player::assignKey </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_player.html#a2da5df212d083bbb1460237f34ab0d88">Action</a>&#160;</td>
-          <td class="paramname"><em>action</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>key</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6981eb691fdee98983e69a4daa6b05d0" name="a6981eb691fdee98983e69a4daa6b05d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6981eb691fdee98983e69a4daa6b05d0">&#9670;&#160;</a></span>getAssignedKey()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Player::getAssignedKey </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_player.html#a2da5df212d083bbb1460237f34ab0d88">Action</a>&#160;</td>
-          <td class="paramname"><em>action</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1a0a2008ad8a81caec0b473d231f483f" name="a1a0a2008ad8a81caec0b473d231f483f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a0a2008ad8a81caec0b473d231f483f">&#9670;&#160;</a></span>handleEvent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Player::handleEvent </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_input_command_queue.html">InputCommandQueue</a> &amp;&#160;</td>
-          <td class="paramname"><em>commands</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aab9d82be79245fbfeaa899c73c7c1b76" name="aab9d82be79245fbfeaa899c73c7c1b76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab9d82be79245fbfeaa899c73c7c1b76">&#9670;&#160;</a></span>handleRealtimeInput()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Player::handleRealtimeInput </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_input_command_queue.html">InputCommandQueue</a> &amp;&#160;</td>
-          <td class="paramname"><em>commands</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae4b310a8b04f3d2b18e2192e5df536fd" name="ae4b310a8b04f3d2b18e2192e5df536fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4b310a8b04f3d2b18e2192e5df536fd">&#9670;&#160;</a></span>initializeActions()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Player::initializeActions </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="_player_8h_source.html">Player.h</a></li>
-<li><a class="el" href="_player_8cpp.html">Player.cpp</a></li>
+<li>Assignment1_ChizhovAndrey/<a class="el" href="_player_8h_source.html">Player.h</a></li>
+<li>Assignment1_ChizhovAndrey/Player.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

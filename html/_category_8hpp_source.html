@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Assignment 2: Category.hpp Source File</title>
+<title>Game Engine Development 2 FINAL: Assignment1_ChizhovAndrey/Category.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Assignment 2
+   <div id="projectname">Game Engine Development 2 FINAL
    </div>
-   <div id="projectbrief">shoot em up using directx</div>
   </td>
  </tr>
  </tbody>
@@ -47,7 +46,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -69,29 +67,27 @@ $(function() {
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_55e203a30ebf9a41bb2d31f923f1c32e.html">Assignment1_ChizhovAndrey</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">Category.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_category_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno"><a class="line" href="namespace_category.html">    2</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_category.html">Category</a></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">namespace </span>Category</div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>{</div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="namespace_category.html#a2ff936dbd42aeae91fdfb6f8456a8ab0">    4</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="namespace_category.html#a2ff936dbd42aeae91fdfb6f8456a8ab0">Type</a></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    <span class="keyword">enum</span> Type</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    {</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="namespace_category.html#a2ff936dbd42aeae91fdfb6f8456a8ab0af5e99963224a9d7e0d16e4a782446ebf">    6</a></span>        <a class="code hl_enumvalue" href="namespace_category.html#a2ff936dbd42aeae91fdfb6f8456a8ab0af5e99963224a9d7e0d16e4a782446ebf">None</a> = 0,</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="namespace_category.html#a2ff936dbd42aeae91fdfb6f8456a8ab0ae45daecedd1b5f037e9e6e915a44f3b0">    7</a></span>        <a class="code hl_enumvalue" href="namespace_category.html#a2ff936dbd42aeae91fdfb6f8456a8ab0ae45daecedd1b5f037e9e6e915a44f3b0">Scene</a> = 1 &lt;&lt; 0,</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="namespace_category.html#a2ff936dbd42aeae91fdfb6f8456a8ab0ac17fded322e70d4086e2f5dfcc706679">    8</a></span>        <a class="code hl_enumvalue" href="namespace_category.html#a2ff936dbd42aeae91fdfb6f8456a8ab0ac17fded322e70d4086e2f5dfcc706679">PlayerAircraft</a> = 1 &lt;&lt; 1,</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="namespace_category.html#a2ff936dbd42aeae91fdfb6f8456a8ab0a05584389175665f09038745d7486f798">    9</a></span>        <a class="code hl_enumvalue" href="namespace_category.html#a2ff936dbd42aeae91fdfb6f8456a8ab0a05584389175665f09038745d7486f798">AlliedAircraft</a> = 1 &lt;&lt; 2,</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="namespace_category.html#a2ff936dbd42aeae91fdfb6f8456a8ab0a200d37e43bb2556f6e93fcc933124034">   10</a></span>        <a class="code hl_enumvalue" href="namespace_category.html#a2ff936dbd42aeae91fdfb6f8456a8ab0a200d37e43bb2556f6e93fcc933124034">EnemyAircraft</a> = 1 &lt;&lt; 3,</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>        None = 0,</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>        Scene = 1 &lt;&lt; 0,</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        PlayerAircraft = 1 &lt;&lt; 1,</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        AlliedAircraft = 1 &lt;&lt; 2,</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        EnemyAircraft = 1 &lt;&lt; 3,</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    };</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>}</div>
-<div class="ttc" id="anamespace_category_html"><div class="ttname"><a href="namespace_category.html">Category</a></div><div class="ttdef"><b>Definition:</b> Category.hpp:3</div></div>
-<div class="ttc" id="anamespace_category_html_a2ff936dbd42aeae91fdfb6f8456a8ab0"><div class="ttname"><a href="namespace_category.html#a2ff936dbd42aeae91fdfb6f8456a8ab0">Category::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> Category.hpp:5</div></div>
-<div class="ttc" id="anamespace_category_html_a2ff936dbd42aeae91fdfb6f8456a8ab0a05584389175665f09038745d7486f798"><div class="ttname"><a href="namespace_category.html#a2ff936dbd42aeae91fdfb6f8456a8ab0a05584389175665f09038745d7486f798">Category::AlliedAircraft</a></div><div class="ttdeci">@ AlliedAircraft</div><div class="ttdef"><b>Definition:</b> Category.hpp:9</div></div>
-<div class="ttc" id="anamespace_category_html_a2ff936dbd42aeae91fdfb6f8456a8ab0a200d37e43bb2556f6e93fcc933124034"><div class="ttname"><a href="namespace_category.html#a2ff936dbd42aeae91fdfb6f8456a8ab0a200d37e43bb2556f6e93fcc933124034">Category::EnemyAircraft</a></div><div class="ttdeci">@ EnemyAircraft</div><div class="ttdef"><b>Definition:</b> Category.hpp:10</div></div>
-<div class="ttc" id="anamespace_category_html_a2ff936dbd42aeae91fdfb6f8456a8ab0ac17fded322e70d4086e2f5dfcc706679"><div class="ttname"><a href="namespace_category.html#a2ff936dbd42aeae91fdfb6f8456a8ab0ac17fded322e70d4086e2f5dfcc706679">Category::PlayerAircraft</a></div><div class="ttdeci">@ PlayerAircraft</div><div class="ttdef"><b>Definition:</b> Category.hpp:8</div></div>
-<div class="ttc" id="anamespace_category_html_a2ff936dbd42aeae91fdfb6f8456a8ab0ae45daecedd1b5f037e9e6e915a44f3b0"><div class="ttname"><a href="namespace_category.html#a2ff936dbd42aeae91fdfb6f8456a8ab0ae45daecedd1b5f037e9e6e915a44f3b0">Category::Scene</a></div><div class="ttdeci">@ Scene</div><div class="ttdef"><b>Definition:</b> Category.hpp:7</div></div>
-<div class="ttc" id="anamespace_category_html_a2ff936dbd42aeae91fdfb6f8456a8ab0af5e99963224a9d7e0d16e4a782446ebf"><div class="ttname"><a href="namespace_category.html#a2ff936dbd42aeae91fdfb6f8456a8ab0af5e99963224a9d7e0d16e4a782446ebf">Category::None</a></div><div class="ttdeci">@ None</div><div class="ttdef"><b>Definition:</b> Category.hpp:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

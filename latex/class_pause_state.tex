@@ -1,0 +1,129 @@
+\hypertarget{class_pause_state}{}\doxysection{Pause\+State Class Reference}
+\label{class_pause_state}\index{PauseState@{PauseState}}
+Inheritance diagram for Pause\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pause_state}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pause_state_ac5c14226e18f688233f5b511e1025a59}\label{class_pause_state_ac5c14226e18f688233f5b511e1025a59}} 
+{\bfseries Pause\+State} (\mbox{\hyperlink{class_state_stack}{State\+Stack}} \&stack, \mbox{\hyperlink{struct_state_1_1_context}{Context}} context)
+\item 
+void \mbox{\hyperlink{class_pause_state_a779835a9b18e10a694e39ded785e3fe0}{build\+Scene}} () override
+\item 
+void \mbox{\hyperlink{class_pause_state_a5d610281b5fa3c40ed65f23a378e3594}{draw}} (\mbox{\hyperlink{class_game}{Game}} $\ast$game) override
+\item 
+void \mbox{\hyperlink{class_pause_state_a0e593d847afbbc02a011fb5cb149da40}{update}} (const Game\+Timer \&gt) override
+\item 
+void \mbox{\hyperlink{class_pause_state_a850ab5d17569c9456ae5350f196de820}{handle\+Event}} () override
+\item 
+\mbox{\Hypertarget{class_pause_state_a028840038d08dd77494f695e025cf260}\label{class_pause_state_a028840038d08dd77494f695e025cf260}} 
+void {\bfseries update\+Option\+Text} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_state}{State}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_state_afede488ff3c1b264bbd07f8aeead84a7}\label{class_state_afede488ff3c1b264bbd07f8aeead84a7}} 
+{\bfseries State} (\mbox{\hyperlink{class_state_stack}{State\+Stack}} \&stack, \mbox{\hyperlink{struct_state_1_1_context}{Context}} context)
+\item 
+\mbox{\Hypertarget{class_state_a0d518eed0afdad403dfe755fd2fd10fd}\label{class_state_a0d518eed0afdad403dfe755fd2fd10fd}} 
+virtual void {\bfseries build\+Scene} ()
+\item 
+\mbox{\Hypertarget{class_state_a0efcb7e5b9d12870eceb1c9d9041e1af}\label{class_state_a0efcb7e5b9d12870eceb1c9d9041e1af}} 
+virtual void {\bfseries draw} (\mbox{\hyperlink{class_game}{Game}} $\ast$game)
+\item 
+\mbox{\Hypertarget{class_state_ad2b23253454f37e80ec1a016e92fd252}\label{class_state_ad2b23253454f37e80ec1a016e92fd252}} 
+virtual void {\bfseries update} (const Game\+Timer \&gt)
+\item 
+\mbox{\Hypertarget{class_state_a28b82eb17a2708092027c66d2ab92fae}\label{class_state_a28b82eb17a2708092027c66d2ab92fae}} 
+virtual void {\bfseries handle\+Event} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Public Types inherited from \mbox{\hyperlink{class_state}{State}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_state_a71d9930be1a58be7f711e245b7965d48}\label{class_state_a71d9930be1a58be7f711e245b7965d48}} 
+typedef std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_state}{State}} $>$ {\bfseries Ptr}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes inherited from \mbox{\hyperlink{class_state}{State}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_state_a28ac7542fb934f084850ee7d414abda1}\label{class_state_a28ac7542fb934f084850ee7d414abda1}} 
+States\+::\+ID {\bfseries state\+ID}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_state}{State}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_state_a6763de833ceb9c23df45aff163a4a1cd}\label{class_state_a6763de833ceb9c23df45aff163a4a1cd}} 
+void {\bfseries request\+Stack\+Push} (States\+::\+ID state\+ID)
+\item 
+\mbox{\Hypertarget{class_state_aa418660892d6161772c907bd8d70f910}\label{class_state_aa418660892d6161772c907bd8d70f910}} 
+void {\bfseries request\+Stack\+Pop} ()
+\item 
+\mbox{\Hypertarget{class_state_a4b602bed9bf0179ee5f6748fce340ae6}\label{class_state_a4b602bed9bf0179ee5f6748fce340ae6}} 
+void {\bfseries request\+State\+Clear} ()
+\item 
+\mbox{\Hypertarget{class_state_af02f197f7d66f465727325838fd6db3f}\label{class_state_af02f197f7d66f465727325838fd6db3f}} 
+\mbox{\hyperlink{struct_state_1_1_context}{Context}} {\bfseries get\+Context} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_state}{State}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_state_af0424dd012cc1ceb6e0f416982aa9228}\label{class_state_af0424dd012cc1ceb6e0f416982aa9228}} 
+\mbox{\hyperlink{class_state_stack}{State\+Stack}} $\ast$ {\bfseries m\+Stack}
+\item 
+\mbox{\Hypertarget{class_state_a7a3d9f2d67529dd7c2eaae143447511b}\label{class_state_a7a3d9f2d67529dd7c2eaae143447511b}} 
+\mbox{\hyperlink{struct_state_1_1_context}{Context}} {\bfseries m\+Context}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pause_state_a779835a9b18e10a694e39ded785e3fe0}\label{class_pause_state_a779835a9b18e10a694e39ded785e3fe0}} 
+\index{PauseState@{PauseState}!buildScene@{buildScene}}
+\index{buildScene@{buildScene}!PauseState@{PauseState}}
+\doxysubsubsection{\texorpdfstring{buildScene()}{buildScene()}}
+{\footnotesize\ttfamily void Pause\+State\+::build\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_state}{State}}.
+
+\mbox{\Hypertarget{class_pause_state_a5d610281b5fa3c40ed65f23a378e3594}\label{class_pause_state_a5d610281b5fa3c40ed65f23a378e3594}} 
+\index{PauseState@{PauseState}!draw@{draw}}
+\index{draw@{draw}!PauseState@{PauseState}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Pause\+State\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}} $\ast$}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_state}{State}}.
+
+\mbox{\Hypertarget{class_pause_state_a850ab5d17569c9456ae5350f196de820}\label{class_pause_state_a850ab5d17569c9456ae5350f196de820}} 
+\index{PauseState@{PauseState}!handleEvent@{handleEvent}}
+\index{handleEvent@{handleEvent}!PauseState@{PauseState}}
+\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
+{\footnotesize\ttfamily void Pause\+State\+::handle\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_state}{State}}.
+
+\mbox{\Hypertarget{class_pause_state_a0e593d847afbbc02a011fb5cb149da40}\label{class_pause_state_a0e593d847afbbc02a011fb5cb149da40}} 
+\index{PauseState@{PauseState}!update@{update}}
+\index{update@{update}!PauseState@{PauseState}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Pause\+State\+::update (\begin{DoxyParamCaption}\item[{const Game\+Timer \&}]{gt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_state}{State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Assignment1\+\_\+\+Chizhov\+Andrey/Pause\+State.\+h\item 
+Assignment1\+\_\+\+Chizhov\+Andrey/Pause\+State.\+cpp\end{DoxyCompactItemize}

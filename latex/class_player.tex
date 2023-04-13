@@ -1,105 +1,36 @@
 \hypertarget{class_player}{}\doxysection{Player Class Reference}
 \label{class_player}\index{Player@{Player}}
-
-
-{\ttfamily \#include $<$Player.\+h$>$}
-
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-enum \mbox{\hyperlink{class_player_a2da5df212d083bbb1460237f34ab0d88}{Action}} \{ \mbox{\hyperlink{class_player_a2da5df212d083bbb1460237f34ab0d88a0166b28e57a9a8553a603a4c0fbe5807}{Move\+Left}}
-, \mbox{\hyperlink{class_player_a2da5df212d083bbb1460237f34ab0d88aa89dbd9060b77566a66b115531df631b}{Move\+Right}}
-, \mbox{\hyperlink{class_player_a2da5df212d083bbb1460237f34ab0d88a6c74df21e9d4e850dd175a23b78c6540}{Move\+Up}}
-, \mbox{\hyperlink{class_player_a2da5df212d083bbb1460237f34ab0d88a685fada3f0a5111b3b8e56f5357a05b0}{Move\+Down}}
+\mbox{\Hypertarget{class_player_a2da5df212d083bbb1460237f34ab0d88}\label{class_player_a2da5df212d083bbb1460237f34ab0d88}} 
+enum {\bfseries Action} \{ {\bfseries Move\+Left}
+, {\bfseries Move\+Right}
+, {\bfseries Move\+Up}
+, {\bfseries Move\+Down}
  \}
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{Player}} ()
-\item 
-void \mbox{\hyperlink{class_player_ae4b310a8b04f3d2b18e2192e5df536fd}{initialize\+Actions}} ()
-\item 
-void \mbox{\hyperlink{class_player_a1a0a2008ad8a81caec0b473d231f483f}{handle\+Event}} (\mbox{\hyperlink{class_input_command_queue}{Input\+Command\+Queue}} \&commands)
-\item 
-void \mbox{\hyperlink{class_player_aab9d82be79245fbfeaa899c73c7c1b76}{handle\+Realtime\+Input}} (\mbox{\hyperlink{class_input_command_queue}{Input\+Command\+Queue}} \&commands)
-\item 
-void \mbox{\hyperlink{class_player_af8c0b2c6a04e0e074355e4c53818e0b8}{assign\+Key}} (\mbox{\hyperlink{class_player_a2da5df212d083bbb1460237f34ab0d88}{Action}} action, int key)
-\item 
-int \mbox{\hyperlink{class_player_a6981eb691fdee98983e69a4daa6b05d0}{get\+Assigned\+Key}} (\mbox{\hyperlink{class_player_a2da5df212d083bbb1460237f34ab0d88}{Action}} action) const
-\end{DoxyCompactItemize}
-
-
-\doxysubsection{Member Enumeration Documentation}
-\mbox{\Hypertarget{class_player_a2da5df212d083bbb1460237f34ab0d88}\label{class_player_a2da5df212d083bbb1460237f34ab0d88}} 
-\index{Player@{Player}!Action@{Action}}
-\index{Action@{Action}!Player@{Player}}
-\doxysubsubsection{\texorpdfstring{Action}{Action}}
-{\footnotesize\ttfamily enum \mbox{\hyperlink{class_player_a2da5df212d083bbb1460237f34ab0d88}{Player\+::\+Action}}}
-
-\begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{MoveLeft@{MoveLeft}!Player@{Player}}\index{Player@{Player}!MoveLeft@{MoveLeft}}}\mbox{\Hypertarget{class_player_a2da5df212d083bbb1460237f34ab0d88a0166b28e57a9a8553a603a4c0fbe5807}\label{class_player_a2da5df212d083bbb1460237f34ab0d88a0166b28e57a9a8553a603a4c0fbe5807}} 
-Move\+Left&\\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{MoveRight@{MoveRight}!Player@{Player}}\index{Player@{Player}!MoveRight@{MoveRight}}}\mbox{\Hypertarget{class_player_a2da5df212d083bbb1460237f34ab0d88aa89dbd9060b77566a66b115531df631b}\label{class_player_a2da5df212d083bbb1460237f34ab0d88aa89dbd9060b77566a66b115531df631b}} 
-Move\+Right&\\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{MoveUp@{MoveUp}!Player@{Player}}\index{Player@{Player}!MoveUp@{MoveUp}}}\mbox{\Hypertarget{class_player_a2da5df212d083bbb1460237f34ab0d88a6c74df21e9d4e850dd175a23b78c6540}\label{class_player_a2da5df212d083bbb1460237f34ab0d88a6c74df21e9d4e850dd175a23b78c6540}} 
-Move\+Up&\\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{MoveDown@{MoveDown}!Player@{Player}}\index{Player@{Player}!MoveDown@{MoveDown}}}\mbox{\Hypertarget{class_player_a2da5df212d083bbb1460237f34ab0d88a685fada3f0a5111b3b8e56f5357a05b0}\label{class_player_a2da5df212d083bbb1460237f34ab0d88a685fada3f0a5111b3b8e56f5357a05b0}} 
-Move\+Down&\\
-\hline
-
-\end{DoxyEnumFields}
-
-
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}\label{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}} 
-\index{Player@{Player}!Player@{Player}}
-\index{Player@{Player}!Player@{Player}}
-\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
-{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-\doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_player_af8c0b2c6a04e0e074355e4c53818e0b8}\label{class_player_af8c0b2c6a04e0e074355e4c53818e0b8}} 
-\index{Player@{Player}!assignKey@{assignKey}}
-\index{assignKey@{assignKey}!Player@{Player}}
-\doxysubsubsection{\texorpdfstring{assignKey()}{assignKey()}}
-{\footnotesize\ttfamily void Player\+::assign\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player_a2da5df212d083bbb1460237f34ab0d88}{Action}}}]{action,  }\item[{int}]{key }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{class_player_a6981eb691fdee98983e69a4daa6b05d0}\label{class_player_a6981eb691fdee98983e69a4daa6b05d0}} 
-\index{Player@{Player}!getAssignedKey@{getAssignedKey}}
-\index{getAssignedKey@{getAssignedKey}!Player@{Player}}
-\doxysubsubsection{\texorpdfstring{getAssignedKey()}{getAssignedKey()}}
-{\footnotesize\ttfamily int Player\+::get\+Assigned\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player_a2da5df212d083bbb1460237f34ab0d88}{Action}}}]{action }\end{DoxyParamCaption}) const}
-
-\mbox{\Hypertarget{class_player_a1a0a2008ad8a81caec0b473d231f483f}\label{class_player_a1a0a2008ad8a81caec0b473d231f483f}} 
-\index{Player@{Player}!handleEvent@{handleEvent}}
-\index{handleEvent@{handleEvent}!Player@{Player}}
-\doxysubsubsection{\texorpdfstring{handleEvent()}{handleEvent()}}
-{\footnotesize\ttfamily void Player\+::handle\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_input_command_queue}{Input\+Command\+Queue}} \&}]{commands }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{class_player_aab9d82be79245fbfeaa899c73c7c1b76}\label{class_player_aab9d82be79245fbfeaa899c73c7c1b76}} 
-\index{Player@{Player}!handleRealtimeInput@{handleRealtimeInput}}
-\index{handleRealtimeInput@{handleRealtimeInput}!Player@{Player}}
-\doxysubsubsection{\texorpdfstring{handleRealtimeInput()}{handleRealtimeInput()}}
-{\footnotesize\ttfamily void Player\+::handle\+Realtime\+Input (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_input_command_queue}{Input\+Command\+Queue}} \&}]{commands }\end{DoxyParamCaption})}
-
 \mbox{\Hypertarget{class_player_ae4b310a8b04f3d2b18e2192e5df536fd}\label{class_player_ae4b310a8b04f3d2b18e2192e5df536fd}} 
-\index{Player@{Player}!initializeActions@{initializeActions}}
-\index{initializeActions@{initializeActions}!Player@{Player}}
-\doxysubsubsection{\texorpdfstring{initializeActions()}{initializeActions()}}
-{\footnotesize\ttfamily void Player\+::initialize\+Actions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
+void {\bfseries initialize\+Actions} ()
+\item 
+\mbox{\Hypertarget{class_player_a1a0a2008ad8a81caec0b473d231f483f}\label{class_player_a1a0a2008ad8a81caec0b473d231f483f}} 
+void {\bfseries handle\+Event} (\mbox{\hyperlink{class_input_command_queue}{Input\+Command\+Queue}} \&commands)
+\item 
+\mbox{\Hypertarget{class_player_aab9d82be79245fbfeaa899c73c7c1b76}\label{class_player_aab9d82be79245fbfeaa899c73c7c1b76}} 
+void {\bfseries handle\+Realtime\+Input} (\mbox{\hyperlink{class_input_command_queue}{Input\+Command\+Queue}} \&commands)
+\item 
+\mbox{\Hypertarget{class_player_af8c0b2c6a04e0e074355e4c53818e0b8}\label{class_player_af8c0b2c6a04e0e074355e4c53818e0b8}} 
+void {\bfseries assign\+Key} (Action action, int key)
+\item 
+\mbox{\Hypertarget{class_player_a6981eb691fdee98983e69a4daa6b05d0}\label{class_player_a6981eb691fdee98983e69a4daa6b05d0}} 
+int {\bfseries get\+Assigned\+Key} (Action action) const
+\end{DoxyCompactItemize}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{_player_8h}{Player.\+h}}\item 
-\mbox{\hyperlink{_player_8cpp}{Player.\+cpp}}\end{DoxyCompactItemize}
+Assignment1\+\_\+\+Chizhov\+Andrey/Player.\+h\item 
+Assignment1\+\_\+\+Chizhov\+Andrey/Player.\+cpp\end{DoxyCompactItemize}

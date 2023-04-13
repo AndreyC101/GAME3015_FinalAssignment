@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Assignment 2: CommandQueue.hpp Source File</title>
+<title>Game Engine Development 2 FINAL: Assignment1_ChizhovAndrey/CommandQueue.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,9 +21,8 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Assignment 2
+   <div id="projectname">Game Engine Development 2 FINAL
    </div>
-   <div id="projectbrief">shoot em up using directx</div>
   </td>
  </tr>
  </tbody>
@@ -47,7 +46,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -69,28 +67,29 @@ $(function() {
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_55e203a30ebf9a41bb2d31f923f1c32e.html">Assignment1_ChizhovAndrey</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">CommandQueue.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_command_queue_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_command_8hpp.html">Command.hpp</a>&quot;</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;Command.hpp&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;queue&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_input_command_queue.html">    5</a></span><span class="keyword">class </span><a class="code hl_class" href="class_input_command_queue.html">InputCommandQueue</a></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_input_command_queue.html#acf870146d03009ffdd3460acd83f4b57">push</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_command.html">Command</a>&amp; command);</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <a class="code hl_struct" href="struct_command.html">Command</a> <a class="code hl_function" href="class_input_command_queue.html#a17ed91ae54320ba240cc237436dceac6">pop</a>();</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_input_command_queue.html#a4692768d73e8414c787f0998f647e959">isEmpty</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordtype">void</span> push(<span class="keyword">const</span> <a class="code hl_struct" href="struct_command.html">Command</a>&amp; command);</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <a class="code hl_struct" href="struct_command.html">Command</a> pop();</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordtype">bool</span> isEmpty() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    std::queue&lt;Command&gt; mQueue;</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>};</div>
-<div class="ttc" id="a_command_8hpp_html"><div class="ttname"><a href="_command_8hpp.html">Command.hpp</a></div></div>
 <div class="ttc" id="aclass_input_command_queue_html"><div class="ttname"><a href="class_input_command_queue.html">InputCommandQueue</a></div><div class="ttdef"><b>Definition:</b> CommandQueue.hpp:6</div></div>
-<div class="ttc" id="aclass_input_command_queue_html_a17ed91ae54320ba240cc237436dceac6"><div class="ttname"><a href="class_input_command_queue.html#a17ed91ae54320ba240cc237436dceac6">InputCommandQueue::pop</a></div><div class="ttdeci">Command pop()</div><div class="ttdef"><b>Definition:</b> CommandQueue.cpp:10</div></div>
-<div class="ttc" id="aclass_input_command_queue_html_a4692768d73e8414c787f0998f647e959"><div class="ttname"><a href="class_input_command_queue.html#a4692768d73e8414c787f0998f647e959">InputCommandQueue::isEmpty</a></div><div class="ttdeci">bool isEmpty() const</div><div class="ttdef"><b>Definition:</b> CommandQueue.cpp:17</div></div>
-<div class="ttc" id="aclass_input_command_queue_html_acf870146d03009ffdd3460acd83f4b57"><div class="ttname"><a href="class_input_command_queue.html#acf870146d03009ffdd3460acd83f4b57">InputCommandQueue::push</a></div><div class="ttdeci">void push(const Command &amp;command)</div><div class="ttdef"><b>Definition:</b> CommandQueue.cpp:5</div></div>
 <div class="ttc" id="astruct_command_html"><div class="ttname"><a href="struct_command.html">Command</a></div><div class="ttdef"><b>Definition:</b> Command.hpp:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
