@@ -17,6 +17,7 @@ void GameState::buildScene()
 
 void GameState::draw(Game* game)
 {
+	mWorld->draw(game);
 }
 
 void GameState::update(const GameTimer& gt)

@@ -33,7 +33,9 @@ bool Game::Initialize()
 	mStateStack->applyPendingChanges();
 
 	mCamera.SetPosition(0, 5, 0);
-	mCamera.Pitch(3.14 / 2);//3);
+	mCamera.Pitch(3.14 / 2);
+
+	SetRenderedState(States::Title);
 
 	ThrowIfFailed(mCommandList->Reset(mDirectCmdListAlloc.Get(), nullptr));
 	mCbvSrvDescriptorSize = md3dDevice->GetDescriptorHandleIncrementSize(D3D12_DESCRIPTOR_HEAP_TYPE_CBV_SRV_UAV);
@@ -55,9 +57,6 @@ bool Game::Initialize()
 
 	// Wait until initialization is complete.
 	FlushCommandQueue();
-
-	SetRenderedState(States::Title);
-
 	return true;
 }
 
@@ -132,8 +131,8 @@ void Game::Draw(const GameTimer& gt)
 
 	///////////////////////////////////////////////////////////////////////////////////// MAIN DRAW
 
-	//mStateStack->draw(this, idOfRenderedState);
-	DrawRenderItems(mCommandList.Get(), mOpaqueRitems);
+	mStateStack->draw(this, idOfRenderedState);
+	//DrawRenderItems(mCommandList.Get(), mOpaqueRitems);
 
 	////////////////////////////////////////////////////////////////////////////////////// POST-DRAW BOILERPLATE
 
@@ -756,8 +755,6 @@ void Game::BuildRenderItems()
 void Game::SetRenderedState(States::ID id)
 {
 	idOfRenderedState = id;
-
-	//
 }
 
 void Game::DrawRenderItems(ID3D12GraphicsCommandList* cmdList, const std::vector<RenderItem*>& ritems)

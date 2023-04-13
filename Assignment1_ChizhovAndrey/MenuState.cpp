@@ -11,25 +11,25 @@ MenuState::MenuState(StateStack& stack, State::Context context)
 
 void MenuState::buildScene()
 {
-	std::unique_ptr<SceneNode> backgroundSprite(new SceneNode(mContext.window, SceneNode::Type::MainMenuBackground));
-	mMenuBackground = backgroundSprite.get();
+	SceneNode* backgroundSprite = new SceneNode(mContext.window, SceneNode::Type::MainMenuBackground);
+	mMenuBackground = backgroundSprite;
 	mMenuBackground->setPosition(0.0f, -0.2f, 0.0f);
 	mMenuBackground->setScale(6.0, 1.0, 4.5);
 
-	/*std::unique_ptr<SceneNode> MenuSelectSprite(new SceneNode(mContext.window, SceneNode::Type::MenuSelection));
-	mMenuSelect = MenuSelectSprite.get();
-	mMenuSelect->setPosition(0.0f, 1.0f, 0.0f);
-	mMenuSelect->setScale(1.0, 1.0, 0.2);
-	mMenuBackground->attachChild(mMenuSelect);*/
+	SceneNode* MenuSelectSprite = new SceneNode(mContext.window, SceneNode::Type::MenuSelection);
+	mMenuSelect = MenuSelectSprite;
+	mMenuSelect->setPosition(0.0f, 0.1f, 0.0f);
+	mMenuSelect->setScale(0.5f, 1.0, 0.1);
+	mMenuBackground->attachChild(mMenuSelect);
 
-	std::unique_ptr<SceneNode> PlayPromptSprite(new SceneNode(mContext.window, SceneNode::Type::PlayPrompt));
-	mPlayPrompt = PlayPromptSprite.get();
+	SceneNode* PlayPromptSprite = new SceneNode(mContext.window, SceneNode::Type::PlayPrompt);
+	mPlayPrompt = PlayPromptSprite;
 	mPlayPrompt->setPosition(0.0f, 0.2f, 0.0f);
 	mPlayPrompt->setScale(1.0, 1.0, 0.2);
 	mMenuBackground->attachChild(mPlayPrompt);
 
-	std::unique_ptr<SceneNode> QuitPromptSprite(new SceneNode(mContext.window, SceneNode::Type::QuitPrompt));
-	mQuitPrompt = QuitPromptSprite.get();
+	SceneNode* QuitPromptSprite = new SceneNode(mContext.window, SceneNode::Type::QuitPrompt);
+	mQuitPrompt = QuitPromptSprite;
 	mQuitPrompt->setPosition(0.0f, 0.2f, -0.5f);
 	mQuitPrompt->setScale(1.0, 1.0, 0.2);
 	mMenuBackground->attachChild(mQuitPrompt);
@@ -42,11 +42,25 @@ void MenuState::buildScene()
 
 void MenuState::draw(Game* game)
 {
+	mMenuBackground->draw(game);
 }
 
 void MenuState::update(const GameTimer& gt)
 {
 	timeSinceLastKeyPressed += gt.DeltaTime();
+
+	switch (mOptionIndex) {
+	case 0:
+		if (mMenuSelect->getWorldPosition().z >= 0) mMenuSelect->setVelocity(XMFLOAT2(0, 0));
+		break;
+	case 1:
+		if (mMenuSelect->getWorldPosition().z <= -0.5) mMenuSelect->setVelocity(XMFLOAT2(0, 0));
+		break;
+	default:
+		break;
+	}
+
+	mMenuSelect->update(gt);
 }
 
 void MenuState::handleEvent()
@@ -58,12 +72,12 @@ void MenuState::handleEvent()
 		timeSinceLastKeyPressed = 0.0f;
 		switch (mOptionIndex) {
 			case 0: 
-				//mMenuSelect->setPosition(0.0f, -0.1f, 0.0f);
+				mMenuSelect->setVelocity(XMFLOAT2(0, 2));
 				msgbuf = L"Play Selected\n";
 				OutputDebugString(msgbuf);
 			break;
 			case 1:
-				//mMenuSelect->setPosition(0.0f, -0.1f, -0.5f);
+				mMenuSelect->setVelocity(XMFLOAT2(0, -2));
 				msgbuf = L"Quit Selected\n";
 				OutputDebugString(msgbuf);
 			break;

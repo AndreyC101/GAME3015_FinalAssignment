@@ -17,16 +17,16 @@ TitleState::~TitleState()
 
 void TitleState::buildScene()
 {		
-	std::unique_ptr<SceneNode> backgroundSprite(new SceneNode(mContext.window, SceneNode::Type::MenuBackground));
-	mBackgroundSprite = backgroundSprite.get();
+	SceneNode* backgroundSprite = new SceneNode(mContext.window, SceneNode::Type::MenuBackground);
+	mBackgroundSprite = backgroundSprite;
 	mBackgroundSprite->setPosition(0.0f, 0.0f, 0.0f);
 	mBackgroundSprite->setScale(6.0, 1.0, 4.5);
 
-	std::unique_ptr<SceneNode> textPromptSprite(new SceneNode(mContext.window, SceneNode::Type::TitleScreenPrompt));
-	mPromptText = textPromptSprite.get();
+	SceneNode* textPromptSprite = new SceneNode(mContext.window, SceneNode::Type::TitleScreenPrompt);
+	mPromptText = textPromptSprite;
 	mPromptText->setPosition(0, 1.2f, 0.0f);
 	mPromptText->setScale(2.0, 1.0, 0.2);
-	mBackgroundSprite->attachChild(std::move(mPromptText));
+	mBackgroundSprite->attachChild(mPromptText);
 
 	LPCWSTR msgbuf = L"Building Title Scene\n";
 	OutputDebugString(msgbuf);
@@ -36,12 +36,9 @@ void TitleState::buildScene()
 
 void TitleState::draw(Game* game)
 {
-	/*
 	LPCWSTR msgbuf = L"Drawing Title Scene\n";
 	OutputDebugString(msgbuf);
-	mBackgroundSprite->drawCurrent(game);
-	if (showPrompt) mPromptText->drawCurrent(game);
-	*/
+	mBackgroundSprite->draw(game);
 }
 
 void TitleState::update(const GameTimer& gt)

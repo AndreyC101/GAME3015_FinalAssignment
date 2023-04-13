@@ -45,6 +45,11 @@ void StateStack::update(const GameTimer& gt, States::ID idOfRenderedState)
 
 void StateStack::draw(Game* game, States::ID idOfRenderedState)
 {
+	for (auto itr = mStack.rbegin(); itr != mStack.rend(); ++itr)
+	{
+		if (itr->get()->stateID == idOfRenderedState)
+			(*itr)->draw(game);
+	}
 }
 
 void StateStack::handleEvent(States::ID idOfRenderedState)

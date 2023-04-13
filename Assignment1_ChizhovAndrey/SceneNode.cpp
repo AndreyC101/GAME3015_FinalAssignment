@@ -43,8 +43,6 @@ void SceneNode::updateCurrent(const GameTimer& gt)
 {
 	if (!mIsVisualized) return;
 
-	if (mVelocity.x == 0 && mVelocity.y == 0) return;
-
 	LPCWSTR msgbuf = L"Updating Scene Node\n";
 	OutputDebugString(msgbuf);
 
@@ -78,7 +76,6 @@ void SceneNode::draw(Game* game)
 
 void SceneNode::drawCurrent(Game* game)
 {
-	/*
 	if (!mIsVisualized) return;
 
 	LPCWSTR msgbuf = L"Drawing Scene Node\n";
@@ -107,14 +104,12 @@ void SceneNode::drawCurrent(Game* game)
 	game->GetCommandList().Get()->SetGraphicsRootConstantBufferView(3, matCBAddress);
 
 	game->GetCommandList().Get()->DrawIndexedInstanced(renderer->IndexCount, 1, renderer->StartIndexLocation, renderer->BaseVertexLocation, 0);
-	*/
 }
 
 void SceneNode::drawChildren(Game* game)
 {
-	for (int i = 0; i < mChildren.size(); i++) {
-		mChildren[i]->draw(game);
-	}
+	for (SceneNode* child : mChildren)
+		child->draw(game);
 }
 
 void SceneNode::build(States::ID stateID)
@@ -281,8 +276,8 @@ void SceneNode::onCommand(const Command& command, const GameTimer& timer)
 		LPCWSTR msgbuf = L"Player Aircraft scene node executing command\n";
 		OutputDebugString(msgbuf);
 	}
-	/*for (SceneNode* child : mChildren)
-		child->onCommand(command, timer);*/
+	for (SceneNode* child : mChildren)
+		child->onCommand(command, timer);
 
 	/*for (int i = 0; i < mChildren.size(); i++) {
 		mChildren[i]->onCommand(command, timer);

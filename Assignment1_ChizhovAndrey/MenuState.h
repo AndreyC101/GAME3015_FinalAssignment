@@ -23,7 +23,7 @@ private:
 
 private:
 	std::size_t				mOptionIndex;
-	const float menuSelectionDelay = 0.65f;
+	const float menuSelectionDelay = 0.35f;
 	float timeSinceLastKeyPressed = 0.0f;
 
 	SceneNode*				mMenuBackground;
